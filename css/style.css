@@ -1,0 +1,286 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 4px 4px 4px gray;
+}
+.brand-name{
+	width: 70%;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+.brand-name a{
+	text-decoration: none;
+	padding: 10px;
+	margin-left: 10px;
+	color: black;
+}
+.brand-name a:hover{
+	background-color: #CCCCCC;
+}
+
+.main-menu{
+	width: 30%;
+	font-size: 20px;
+	letter-spacing: 5px;
+	display: flex;
+	justify-content: space-around;
+}
+.main-menu a{
+	text-decoration: none;
+	padding: 10px;
+	margin-left: 10px;
+	color: black;
+}
+.main-menu a:hover{
+	background-color: #CCCCCC;
+}
+
+
+.header-image{
+	width: 100%;
+	height: auto;
+	position: relative;
+
+}
+.header-image img{
+	width: 100%;
+	height: auto;
+}
+
+.header-title{
+	width: 400px;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	position: absolute;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.br{
+	width: 80px;
+	height: 60px;
+	background-color: #252628;
+	text-align: center;
+	line-height: 60px;
+	letter-spacing: 5px;
+	opacity: 0.8;
+	margin-right: 15px;
+}
+
+
+.project, .about, .contact, .map-area{
+	width: 95%;
+	height: auto;
+	margin: auto;
+	clear: both;
+}
+.project h2, .about h2, .contact h2{
+	padding: 50px 0px 20px 0px;
+	color: #565656;
+}
+
+.box-1, .box-2, .box-3, .box-4{
+	width: 25%;
+	height: auto;
+	padding: 10px;
+	float: left;
+	position: relative;
+}
+
+.project img, .about img{
+	width: 100%;
+	height: auto;
+}
+
+.box-1:before{
+	content: "Summer House";
+	width: 150px;
+	height: 30px;
+	left: 10px;
+	top: 10px;
+	position: absolute;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+.box-2:before{
+	content: "Brick House";
+	width: 150px;
+	height: 30px;
+	left: 10px;
+	top: 10px;
+	position: absolute;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+.box-3:before{
+	content: "Renovated";
+	width: 150px;
+	height: 30px;
+	left: 10px;
+	top: 10px;
+	position: absolute;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+.box-4:before{
+	content: "Barn House";
+	width: 150px;
+	height: 30px;
+	left: 10px;
+	top: 10px;
+	position: absolute;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.box-5, .box-6, .box-7, .box-8{
+	width: 25%;
+	height: auto;
+	padding: 10px;
+	float: left;
+}
+
+.about h3{
+	color: #C8C8C8;
+}
+.about a{
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	background-color: #E9EBEC;
+	display: block;
+	color: black;
+}
+.about a:hover{
+	background-color: #CCCCCC;
+
+}
+
+.about h1{
+	color: #565656;
+}
+
+input[type=text], [type=email]{
+	width: 100%;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+input[type=submit]{
+	padding: 10px;
+	margin-top: 15px;
+	background-color:#E9EBEC;
+	text-transform: uppercase; 
+	border:none;
+	margin-bottom: 20px;
+}
+input[type=submit]:hover{
+	background-color:black;
+	color: white;
+}
+
+.map-area img{
+	width: 100%;
+	height: auto;
+}
+
+.footer{
+	width: 100%;
+	height: 85px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+.box-1, .box-2, .box-3, .box-4{
+	width: 50%;
+	float: left;
+}
+
+.box-5, .box-6, .box-7, .box-8{
+	width: 50%;
+	float: left;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+	.brand-name{
+	width: 100%;
+}
+
+.main-menu{
+	display: none;
+}
+
+.header-title{
+	width: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: -25px;
+	position: absolute;
+}
+.hidden-item{
+	display: none;
+}
+
+.br{
+	width: 80px;
+	height: 60px;
+	margin-right: 0px;
+}
+
+.box-1, .box-2, .box-3, .box-4{
+	width: 100%;
+	float: none;
+}
+
+.box-5, .box-6, .box-7, .box-8{
+	width: 100%;
+	float: none;
+}
+
+}
